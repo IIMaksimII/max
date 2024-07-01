@@ -1,0 +1,47 @@
+.size-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .size-selector select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .size-selector .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-to-cart-btn,
+  .add-to-favorites-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #218838;
+  }
+  
+  .add-to-favorites-btn {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .add-to-favorites-btn:hover {
+    background-color: #e0a800;
+  }

@@ -1,0 +1,230 @@
+.header {
+  padding: 15px 0;
+  background-color: #000;
+}
+
+.header_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Добавлено для адаптивности */
+}
+.logo-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_logo span {
+  font-weight: 900;
+  font-size: 2rem; /* Использование rem для адаптивности */
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Добавлено для адаптивности */
+}
+
+.header_nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Добавлено для адаптивности */
+}
+
+.header_nav li {
+  display: flex;
+}
+
+.bt {
+  font-weight: 600;
+  font-size: 1rem; /* Использование rem для адаптивности */
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  color: #f9f3f3; /* Цвет текста кнопок */
+  background-color: #000; /* Цвет фона кнопок */
+}
+
+.bt.active {
+  border-bottom: 2px solid rgb(255, 250, 250);
+}
+
+
+.bt:hover {
+  background-color: #000000;
+}
+
+.header_user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Добавлено для адаптивности */
+}
+
+
+.header_user .bt {
+  font-weight: 600;
+  font-size: 1rem; /* Размер шрифта */
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  color: #fff; /* Цвет текста кнопок */
+  background-color: #000; /* Цвет фона кнопок */
+}
+/* При наведении на кнопки */
+.header_user .bt:hover {
+  background-color: #4b4949;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  transition: filter 0.3s ease;
+}
+
+.img:hover {
+  filter: grayscale(100%) brightness(50%);
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 200px;
+  background: hsl(231, 14%, 10%);
+  border: 2px solid #2b2c37;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.35s ease-out;
+}
+
+.input {
+  font-size: 1rem; /* Использование rem для адаптивности */
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #727884;
+}
+
+.input-wrapper:has(input:focus) {
+  border: 2px solid #de55de;
+  box-shadow: 0 0 120px hsl(300 67% 60% / 0.5);
+}
+
+.input-wrapper > svg {
+  position: absolute;
+  right: 1rem;
+  width: 28px;
+  flex-shrink: 0;
+  transition: 0.25s;
+}
+
+.input:focus + svg > path {
+  stroke: none;
+  fill: #ec83bb;
+}
+
+.input:focus + svg {
+  scale: 1.2;
+}
+
+@media (max-width: 768px) {
+  .header_row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_nav li {
+    margin-bottom: 10px;
+  }
+
+  .header_user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bt {
+    font-size: 0.8rem; /* Уменьшение размера шрифта */
+    padding: 5px 10px; /* Уменьшение отступов */
+  }
+
+  .header_logo span {
+  color: #000; /* Цвет текста логотипа */
+}
+
+  .input-wrapper {
+    max-width: 150px; /* Уменьшение ширины поля ввода */
+  }
+
+  .img {
+    width: 15px; /* Уменьшение размера иконок */
+    height: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header_nav ul {
+    justify-content: center;
+  }
+
+  .header_user {
+    justify-content: center;
+  }
+
+  .bt {
+    width: 100%; /* Полная ширина для кнопок */
+    margin-bottom: 5px; /* Отступы между кнопками */
+  }
+
+  .input-wrapper {
+    width: 100%;
+    max-width: none; /* Убрать ограничение по ширине */
+  }
+
+  .input {
+    width: 100%; /* Полная ширина для поля ввода */
+  }
+}

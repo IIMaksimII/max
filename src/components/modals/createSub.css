@@ -1,0 +1,75 @@
+.modal-overlay-Sub {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-Sub {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content select,
+.modal-content input[type="text"] {
+    width: calc(100% - 22px); /* Вычитаем ширину скроллбара */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем padding внутри ширины */
+}
+
+.modal-buttons-Sub {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons-Sub button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-buttons-Sub button:hover {
+    background-color: #ddd;
+}
+
+.modal-buttons-Sub button.cancel-button-Sub {
+    border: 1px solid #f44336; /* Красная рамка */
+    color: #f44336; /* Красный цвет текста */
+}
+
+.modal-buttons-Sub button.cancel-button-Sub:hover {
+    background-color: #f44336; /* Красный цвет фона при наведении */
+    border-color: #f44336; /* Красная рамка при наведении */
+    color: white; /* Белый цвет текста при наведении */
+}
+
+.modal-buttons-Sub button.add-button-Sub {
+    border: 1px solid #22cd0b; /* Зеленая рамка */
+    color: #22cd0b; /* Зеленый цвет текста */
+}
+
+.modal-buttons-Sub button.add-button-Sub:hover {
+    background-color: #22cd0b; /* Зеленый цвет фона при наведении */
+    border-color: #22cd0b; /* Зеленая рамка при наведении */
+    color: white; /* Белый цвет текста при наведении */
+}

@@ -1,0 +1,77 @@
+.product-list-container {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в строке */
+    gap: 60px; /* Уменьшенный отступ между карточками */
+}
+
+.product-card {
+    width: 100%; /* Используем всю доступную ширину */
+    max-width: 100%; /* Максимальная ширина карточки, можете подстроить под ваш дизайн */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Отступ между изображением и текстом */
+}
+
+.product-card p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #000; /* Черный цвет текста */
+    text-decoration: none; /* Убирает подчеркивание текста */
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #000; /* Черный цвет текста */
+    text-decoration: none; /* Убирает подчеркивание текста */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #ddd;
+}
+.product-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card p {
+    color: #000;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}

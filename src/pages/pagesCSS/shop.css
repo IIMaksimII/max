@@ -1,0 +1,19 @@
+
+
+  .row {
+    margin-top: 10%; /* Добавить отступ сверху */
+    display: flex;
+    align-items: flex-start; /* Выравнивание элементов сверху */
+  }
+
+  .left-column {
+    padding: 15px; /* Пример отступа */
+  }
+  
+  .right-column {
+    margin-top: 100px;
+    padding: 15px;
+    border-left: 1px solid #c33131;
+  }
+  
+  /* Стили для контейнера страницы устройства (DevicePage) */

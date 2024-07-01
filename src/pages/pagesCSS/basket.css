@@ -1,0 +1,248 @@
+/* General Styles */
+.basket-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.basket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.basket-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.basket-header span {
+  font-size: 18px;
+  color: #888;
+}
+
+.basket-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.basket-item:last-child {
+  border-bottom: none;
+}
+
+.basket-item-details {
+  display: flex;
+  align-items: center;
+}
+
+.basket-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.basket-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.basket-item-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.basket-item-quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.quantity-button:hover {
+  background-color: #ccc;
+}
+
+.basket-item-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.remove-button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.remove-button:hover {
+  background-color: #ff7875;
+}
+
+.basket-footer {
+  margin-top: 20px;
+}
+
+.basket-address {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #8a2be2;
+  cursor: pointer;
+}
+
+.basket-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.checkout-button {
+  background-color: #257f38;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.checkout-button:hover {
+  background-color: #19bc91;
+}
+
+/* Modal Styles */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.delivery-container {
+  width: 30%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-right: 20px; /* Space between the container and the map */
+}
+
+.delivery-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.delivery-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.delivery-buttons button {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.delivery-buttons button.active {
+  background-color: #8a2be2;
+  color: white;
+}
+
+.delivery-buttons button:last-child {
+  margin-right: 0;
+}
+
+.delivery-buttons button:hover {
+  background-color: #ccc;
+}
+
+.map-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.address-input {
+  margin-top: 10px;
+}
+
+.address-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.address-input input:focus {
+  outline: none;
+  border-color: #8a2be2; /* Adjust focus color as needed */
+}
+

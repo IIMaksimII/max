@@ -1,0 +1,93 @@
+.auth-card {
+    width: 400px;
+    margin: 20vh auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-body .wrapper {
+    margin-bottom: 10px;
+    position: relative; /* Необходимо для позиционирования кнопки глаза */
+}
+
+.auth-body input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-body input.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-section {
+    font-size: 0.9rem;
+}
+
+.register-link {
+    text-decoration: none;
+    color: #007bff;
+    border-bottom: 1px dashed transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.register-link:hover {
+    border-color: #007bff;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.password-toggle-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-eye,
+.fa-eye-slash {
+    font-size: 1rem;
+    color: black; /* Черный цвет для иконок */
+}
+
+.password-input {
+    font-family: 'fontawesome'; /* Подключите шрифт FontAwesome или используйте свой собственный */
+}
